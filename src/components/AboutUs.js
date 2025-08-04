@@ -67,12 +67,12 @@ function AboutUs() {
             <div className="team-member">
               <img src={yash} alt="Website Designer" />
               <h3>Yash Raj</h3>
-              <p>Website Designer</p>
+              <p>Website Developer</p>
             </div>
             <div className="team-member">
               <img src={vikash} alt="Website Developer" />
               <h3>Vikash Kumar</h3>
-              <p>Website Developer</p>
+              <p>Co-Website Developer</p>
             </div>
           </div>
         </div>
