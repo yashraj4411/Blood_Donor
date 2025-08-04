@@ -1,5 +1,7 @@
 import React from "react";
 import hodSir from './hod_sir.jpg';
+import yash from './Yash.jpg';
+import vikash from './Vikash.jpg';
 import "./AboutUs.css";
 
 function AboutUs() {
@@ -40,6 +42,8 @@ function AboutUs() {
 
         <div className="team">
           <h2>Meet Our Team</h2>
+
+          {/* First Row: 3 members */}
           <div className="team-members">
             <div className="team-member">
               <img src="https://assets.telegraphindia.com/abp/2022/Dec/1670953883_laxman.jpg" alt="Founder" />
@@ -55,6 +59,20 @@ function AboutUs() {
               <img src={hodSir} alt="Head Of Department" />
               <h3>Chanchal Kumar De</h3>
               <p>Head of Department</p>
+            </div>
+          </div>
+
+          {/* Second Row: 2 members */}
+          <div className="team-members second-row">
+            <div className="team-member">
+              <img src={yash} alt="Website Designer" />
+              <h3>Yash Raj</h3>
+              <p>Website Designer</p>
+            </div>
+            <div className="team-member">
+              <img src={vikash} alt="Website Developer" />
+              <h3>Vikash Kumar</h3>
+              <p>Website Developer</p>
             </div>
           </div>
         </div>

@@ -223,7 +223,7 @@ const ContactUs = () => {
           <i className="fa fa-phone"></i>
           <div>
             <h4>Phone</h4>
-            <p>=919693564044</p>
+            <p>+919693564044</p>
             <p>+917004298868 </p>
           </div>
         </div>
