@@ -1,16 +1,15 @@
 import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion"; // removed useInView
 import "./Home.css";
 
 function Home() {
   const statsRef = useRef(null);
-  const isInView = useInView(statsRef, { once: true }); // Trigger animation only once
 
   return (
     <div className="home-container">
       <header className="hero-section">
-        <br></br>
-        <br></br>
+        <br />
+        <br />
         <p className="hero-subtitle">
           Your donation can make a difference in someone's life today.
         </p>
@@ -31,10 +30,11 @@ function Home() {
       {/* Stats Section with Framer Motion */}
       <motion.section
         className="stats-section"
-        initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
-        whileInView={{ opacity: 1, x: 0 }} // Animate when in view
-        viewport={{ once: true }} // Trigger animation only once
-        transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        ref={statsRef}
       >
         <h2>Donation Stats</h2>
         <div className="stats-grid">

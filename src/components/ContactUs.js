@@ -248,14 +248,38 @@ const ContactUs = () => {
         </div>
         
         <div className="social-media">
-          <h4>Connect With Us</h4>
-          <div className="social-icons">
-            <a href="#" className="social-icon"><i className="fa fa-facebook"></i></a>
-            <a href="#" className="social-icon"><i className="fa fa-twitter"></i></a>
-            <a href="#" className="social-icon"><i className="fa fa-instagram"></i></a>
-            <a href="#" className="social-icon"><i className="fa fa-linkedin"></i></a>
-          </div>
-        </div>
+  <h4>Connect With Us</h4>
+  <div className="social-icons">
+    <button 
+      className="social-icon" 
+      onClick={() => window.open("https://facebook.com", "_blank", "noopener,noreferrer")}
+    >
+      <i className="fa fa-facebook"></i>
+    </button>
+    
+    <button 
+      className="social-icon" 
+      onClick={() => window.open("https://twitter.com", "_blank", "noopener,noreferrer")}
+    >
+      <i className="fa fa-twitter"></i>
+    </button>
+    
+    <button 
+      className="social-icon" 
+      onClick={() => window.open("https://instagram.com", "_blank", "noopener,noreferrer")}
+    >
+      <i className="fa fa-instagram"></i>
+    </button>
+    
+    <button 
+      className="social-icon" 
+      onClick={() => window.open("https://linkedin.com", "_blank", "noopener,noreferrer")}
+    >
+      <i className="fa fa-linkedin"></i>
+    </button>
+  </div>
+</div>
+
       </div>
     </div>
   );
